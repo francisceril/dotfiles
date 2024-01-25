@@ -20,6 +20,7 @@ alias gc="git commit -m"
 alias gpl="git pull"
 alias gps="git push"
 alias gr="git branch"
+alias gcm="git commit -m '$1'"
 
 # docker
 alias dc="docker-compose"

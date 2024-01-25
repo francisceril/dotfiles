@@ -1,0 +1,44 @@
+# Unix
+alias ll="ls -al"
+alias ln="ln -v"
+alias mkdir="mkdir -p"
+alias c="clear"
+alias s="source ~/.zshrc"
+alias ip="ifconfig | grep 'inet ' | grep -v 127.0.0.1 | awk '{print \$2}'"
+alias pip="curl ifconfig.me"
+
+# zsh
+alias zshconfig="code ~/.zshrc"
+
+# homebrew
+alias buc="brew update && brew upgrade && brew cleanup"
+
+# git
+alias gs="git status"
+alias gaa="git add ."
+alias gc="git commit -m"
+alias gpl="git pull"
+alias gps="git push"
+alias gr="git branch"
+
+# docker
+alias dc="docker-compose"
+
+# terraform
+alias tf="terraform"
+alias tfp="terraform plan"
+alias tfa="terraform apply"
+alias tfaa="terraform apply -auto-approve"
+
+# shadcn-ui + bun
+alias shad="bunx shadcn-ui@latest add $1"
+
+# Easier navigation
+alias ...="cd .."
+alias ...="cd ../.."
+alias ....="cd ../../.."
+
+# Include custom aliases
+if [[ -f ~/.aliases.local ]]; then
+    source ~/.aliases.local
+fi
